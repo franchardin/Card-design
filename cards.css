@@ -1,0 +1,79 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: lato, Roboto, sans-serif;
+}
+.container{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	clear: both;
+}
+div.card{
+	border: 0px solid red;
+	border-radius: 100%;
+	width: 400px;
+	height: 400px;
+	display: inline-block;
+	position: relative;
+	margin: 3%;
+}
+div.card:nth-child(1){
+	background: url("https://picsum.photos/500");
+}
+div.card:nth-child(2){
+	background: url("https://picsum.photos/501");
+}
+div.card:nth-child(3){
+	background: url("https://picsum.photos/502");
+}
+div.card:nth-child(4){
+	background: url("https://picsum.photos/503");
+}
+div.card:nth-child(5){
+	background: url("https://picsum.photos/420");
+}
+div.card:nth-child(6){
+	background: url("https://picsum.photos/430");
+}
+.background{
+	text-align: right;
+	border-color: none;
+	border-radius: 100%;
+	position: absolute;
+	display: inline-block;
+	width: 400px;
+	height: 400px;
+	}
+.b1{
+	background-image: linear-gradient(to right, rgba(0,0,0,.0) 50%, dodgerblue 50%);
+}
+.b2{
+	background-image: linear-gradient(to right, rgba(0,0,0,.0) 50%, gold 50%);
+}
+.b3{
+	background-image: linear-gradient(to right, rgba(0,0,0,.0) 50%, #438D80 50%);
+}
+.b4{
+	background-image: linear-gradient(to right, rgba(0,0,0,.0) 50%, #5EFB6E 50%);
+}
+.b5{
+	background-image: linear-gradient(to right, rgba(0,0,0,.0) 50%, #FF2400 50%);
+}
+.b6{
+	background-image: linear-gradient(to right, rgba(0,0,0,.0) 50%, #571B7E 50%);
+}
+span.text{
+	font-size: .9em;
+	display: inline-block;
+	text-align: left;
+	padding-left: 54%;
+	vertical-align: middle;
+}
+span h3{
+	padding-top: 25%;
+}
+span p{
+	padding-right: 20%;
+}
