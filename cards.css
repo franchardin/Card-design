@@ -23,9 +23,8 @@ div.card{
 	display: inline-block;
 	position: relative;
 	margin: 3%;
-}
-div.card:nth-child(1){
-	background: url("https://picsum.photos/500");
+	max-width: 80vw;
+	max-height: 80vw;
 }
 div.card:nth-child(2){
 	background: url("https://picsum.photos/501");
@@ -50,12 +49,8 @@ div.card:nth-child(6){
 	display: inline-block;
 	width: 400px;
 	height: 400px;
-	}
-.b1{
-	background-image: linear-gradient(to right, rgba(0,0,0,.0) 50%, dodgerblue 50%);
-}
-.b2{
-	background-image: linear-gradient(to right, rgba(0,0,0,.0) 50%, gold 50%);
+	max-width: 80vw;
+	max-height: 80vw;
 }
 .b3{
 	background-image: linear-gradient(to right, rgba(0,0,0,.0) 50%, #438D80 50%);
@@ -69,16 +64,25 @@ div.card:nth-child(6){
 .b6{
 	background-image: linear-gradient(to right, rgba(0,0,0,.0) 50%, #571B7E 50%);
 }
-span.text{
-	font-size: .9em;
+
+span.text {
+	font-size: 1em;
 	display: inline-block;
 	text-align: left;
 	padding-left: 54%;
 	vertical-align: middle;
+	overflow: hidden;
+	user-select: none;
 }
-span h3{
+span h3 {
 	padding-top: 25%;
 }
-span p{
+span p {
 	padding-right: 20%;
+}
+
+@media screen and (max-width: 320px) {
+	span.text {
+			font-size: .8em;
+	}
 }
