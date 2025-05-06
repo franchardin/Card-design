@@ -1,4 +1,4 @@
-html, body{
+html, body {
 	margin: 0;
 	padding: 0;
 	font-family: Lato, Roboto, sans-serif;
@@ -15,8 +15,8 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 }
-div.card{
-	border: 0px solid red;
+
+div.card {
 	border-radius: 100%;
 	width: 400px;
 	height: 400px;
@@ -25,25 +25,44 @@ div.card{
 	margin: 3%;
 	max-width: 80vw;
 	max-height: 80vw;
+	--card-color: transparent;
+	--hover-color: transparent;
+
 }
-div.card:nth-child(2){
-	background: url("https://picsum.photos/501");
+
+div.card:nth-child(1) {
+	--card-color: #1e90ff;
+	--hover-color: #1e90ff56;
+	background: url("https://picsum.photos/400");
 }
-div.card:nth-child(3){
-	background: url("https://picsum.photos/502");
+div.card:nth-child(2) {
+	--card-color: #ffd700;
+	--hover-color: #ffd70056;
+	background: url("https://picsum.photos/401");
 }
-div.card:nth-child(4){
-	background: url("https://picsum.photos/503");
+div.card:nth-child(3) {
+	--card-color: #438D80;
+	--hover-color: #438D8056;
+	background: url("https://picsum.photos/402");
 }
-div.card:nth-child(5){
-	background: url("https://picsum.photos/420");
+div.card:nth-child(4) {
+	--card-color: #5EFB6E;
+	--hover-color: #5EFB6E56;
+	background: url("https://picsum.photos/403");
 }
-div.card:nth-child(6){
-	background: url("https://picsum.photos/430");
+div.card:nth-child(5) {
+	--card-color: #FF2400;
+	--hover-color: #FF240056;
+	background: url("https://picsum.photos/404");
 }
-.background{
+div.card:nth-child(6) {
+	--card-color: #571B7E;
+	--hover-color: #571B7E56;
+	background: url("https://picsum.photos/405");
+}
+
+.background {
 	text-align: right;
-	border-color: none;
 	border-radius: 100%;
 	position: absolute;
 	display: inline-block;
@@ -51,18 +70,13 @@ div.card:nth-child(6){
 	height: 400px;
 	max-width: 80vw;
 	max-height: 80vw;
+	background-image: linear-gradient(to right, rgba(0,0,0,0) 50%, var(--card-color) 50%);
 }
-.b3{
-	background-image: linear-gradient(to right, rgba(0,0,0,.0) 50%, #438D80 50%);
-}
-.b4{
-	background-image: linear-gradient(to right, rgba(0,0,0,.0) 50%, #5EFB6E 50%);
-}
-.b5{
-	background-image: linear-gradient(to right, rgba(0,0,0,.0) 50%, #FF2400 50%);
-}
-.b6{
-	background-image: linear-gradient(to right, rgba(0,0,0,.0) 50%, #571B7E 50%);
+
+div.card:hover .background {
+	background-color: var(--hover-color);
+	cursor: pointer;
+	box-shadow: 0 4px 20px var(--hover-color);
 }
 
 span.text {
